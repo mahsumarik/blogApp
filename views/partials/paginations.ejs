@@ -1,0 +1,18 @@
+number of pages: <%= totalPages %> number of production: <%= totalItems %> valid
+page: <%= currentPage %> <% if (totalPages>1) { %>
+<nav class="mt-5">
+  <ul class="pagination justify-content-start">
+    <li class="page-item">
+      <a href="?page=0" class="page-link">first page</a>
+    </li>
+    <% for( let i = 0; i < totalPages; i++ ) { %>
+          <li class="page-item ">
+               <a href="?page<%= i %>" class="page-link <%= (i==currentPage) ? "active":"" %>"><%= i +1 %></a>
+          </li>
+    <% } %>
+    <li class="page-item">
+     <a href="?page=<%= totalPages-1 %>" class="page-link">last page</a>
+   </li>
+  </ul>
+</nav>
+<% } %>
