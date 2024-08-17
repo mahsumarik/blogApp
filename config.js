@@ -2,13 +2,13 @@ const config = {
   db: {
     host: "localhost",
     user: "root",
-    password: "sadik123",
+    password: "",
     database: "blogdb",
   },
   email: {
-    username: "mahsumarik311@gmail.com",
-    password: "rwtt kyyo zlbl gyvn",
-    from: "mahsumarik311@gmail.com"
+    username: "",
+    password: "",
+    from: ""
   }
 };
 
